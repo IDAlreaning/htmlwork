@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+body {
+    margin:0 auto;
+    font-family:'Noto Sans TC', serif;
+    width: 100%;
+}
+.body {
+    margin:0 auto;
+    width: 100%;
+}
+.header {
+    border-radius: 200px;
+    display: block;
+}
+
+.fontawe {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 95px;
+}
+
+.fontawe2 {
+    color: #111;
+    /* color: #49668D; */
+    text-align: center;
+}
+
+.clear {
+    clear: left;
+}
+
+div a {
+    text-decoration: none;
+    color: #111;
+}
