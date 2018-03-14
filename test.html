@@ -33,13 +33,13 @@
         }
 
         .parallax2 {
-
+            /* The image used */
             background-image: url("43.jpg");
             background-size: 200px;
-
+            /* Set a specific height */
             min-height: 500px;
 
-
+            /* Create the parallax scrolling effect */
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -58,11 +58,11 @@
             <img class="header fontawe" src="./images/1211.png" width="230px">
         </div>
         <div>
-            <p class="fontawe2" style="font-size:30px; padding:0;margin:8px;">
+            <p class="fontawe2" style="font-size:30px; padding:0;">
                 <b>鄒采軒</b>
             </p>
-            <pre class="fontawe2" style="font-size:15px; padding:0;margin:8px;"><b>
-1996/02/14　|　<a href="https://idalreaning.wordpress.com" target="_blank">idalreaning.wordpress.com</a></b>
+            <pre class="fontawe2" style="font-size:15px; padding:0;">
+1996/02/14　|　<a href="https://idalreaning.wordpress.com" target="_blank">idalreaning.wordpress.com</a>
             </pre>
             <p class="fontawe2">
                 <a href="https://www.facebook.com/profile.php?id=100000716866220">
@@ -80,6 +80,7 @@
     </header>
 
 
+
     <div>
         <ul class="behind c" style="font-size: 15px;">
             <li class="b">
@@ -92,13 +93,12 @@
                 <a href="#3" class="a">大學活動經歷</a>
             </li>
             <li class="b">
-                <a href="#4" class="a">作品集</a>
+                <a href="#4" class="a">作品心得</a>
             </li>
             <li class="b">
                 <a href="#5" class="a">聯絡版</a>
             </li>
         </ul>
-
         <div style="margin:0 auto; width:90%;">
             <div class="assort" id="1">
                 <br>
@@ -108,7 +108,6 @@
                     </b>
                 </h2>
             </div>
-
             <br>
             <div class="float bigimg">
                 <img class="maxwidth" src="./images/interest/first1.png">
@@ -174,7 +173,8 @@
                     <img class="opacity" src="./images/interest/12017575.jpg" height="200" width="auto;">
                 </div>
             </div>
-
+            <br>
+            <br>
 
             <div class="assort" id="3">
                 <br>
@@ -238,7 +238,6 @@
                         }
                     </script>
                 </div>
-
                 <ul>
                     <li>
                         <p>
@@ -307,12 +306,63 @@
 
             <br>
             <header class="parallax2">
+                <div class="slideshow-container body">
 
-                <p class="fontawe2" style="font-size:100px;line-height:300px;">平時練習的作品！</p>
+                    <div class="mySlides fade">
+                        <img class="img" src="./images/1220_180311_0052.jpg" style="height:40%; width:auto;">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img class="img" src="./images/first3.png" style="height:40%; width:auto;">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img class="img" src="./images/1220_180311_0222.jpg" style="height:40%; width:auto;">
+                    </div>
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot");
+                        if (n > slides.length) { slideIndex = 1 }
+                        if (n < 1) { slideIndex = slides.length }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                    }
+                </script>
+                <p class="fontawe2" style="font-size:30px;">練習的作品</p>
+                <p class="fontawe2" style="font-size:30px;">學習的網誌心得</p>
 
             </header>
 
 
+            <br>
             <div class="assort" id="4">
                 <br>
                 <h2>
@@ -335,12 +385,12 @@
                 </div>
 
 
-                <div class="dropdown" style="margin:0 4%; border:4px dashed rgb(255, 201, 52);">
+                <div class="dropdown" style="margin:0 3%; border:4px dashed rgb(255, 201, 52);">
                     <img src="./images/wok1_image2.png" alt="parallax scroll" width="300" height="200">
                     <div class="dropdown-content">
                         <img style="border:2px solid gray;" src="./images/wok1_image2.png" alt="parallax scroll" width="450" height="300">
                         <div class="desc">
-                            <h3><a href="./Test/parallax_scroll.html" style="text-align:center;">parallax_scroll</a></h3>
+                            <h3>parallax_scroll</h3>
                             <p>Html　CSS　JavaScript</p>
                         </div>
                     </div>
@@ -372,7 +422,7 @@
                 </div>
 
 
-                <div class="dropdown" style="margin:0 4%; border:4px dashed rgb(255, 201, 52);">
+                <div class="dropdown" style="margin:0 3%; border:4px dashed rgb(255, 201, 52);">
                     <img src="./images/wok1_image2.png" alt="parallax scroll" width="300" height="200">
                     <div class="dropdown-content">
                         <img style="border:2px solid gray;" src="./images/wok1_image2.png" alt="parallax scroll" width="450" height="300">
@@ -398,6 +448,8 @@
             <br>
 
 
+            <br>
+            <br>
             <div class="assort" id="5">
                 <br>
                 <h2>

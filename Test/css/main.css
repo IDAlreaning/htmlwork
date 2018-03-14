@@ -1,0 +1,39 @@
+#bg1 {
+    position: fixed;
+}
+    #bg1-item1{
+        position: absolute;
+        top: 162px;
+        left: 200px;  
+    }
+    #bg1-item2{
+		position: absolute;
+		top: 812px;
+		left: 321px;
+    }
+    #bg1-item3{
+		position: absolute;
+		top: 812px;
+		left: 321px;
+    }
+
+#bg2 {
+    position: fixed;
+    top: 162px;
+    left: 200px;
+}
+    #bg2-item1{
+        position: absolute;
+        top: 162px;
+        left: 200px;  
+    }
+    #bg2-item2{
+        position: absolute;
+        top: 812px;
+        left: 321px;
+    }
+    #bg2-item3{
+        position: absolute;
+        top: 812px;
+        left: 321px;
+    }

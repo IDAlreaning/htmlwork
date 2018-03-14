@@ -1,5 +1,5 @@
 
-ul {
+ul.c {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -10,11 +10,11 @@ ul {
     top: 0;
 }
 
-li {
+li.b {
     float: left;
 }
 
-li a,
+li a.a,
 .dropbtn {
     display: block;
     color: white;
@@ -24,11 +24,11 @@ li a,
 
 }
 
-li a:hover .dropdown:hover .dropbtn {
+li a.a:hover .dropdown:hover .dropbtn {
     background-color: #111;
 }
 
-li a:hover {
+li a.a:hover {
     background-color: #111;
 }
 
@@ -37,10 +37,12 @@ background-color: #4CAF50;
 } */
 
 @media screen and (max-width: 600px) {
-    ul li,
-    ul li {
+    ul li.a,
+    ul li.a {
         float: none;
+        
     }
+    
 }
 
 li.dropdown {
