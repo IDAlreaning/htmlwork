@@ -72,3 +72,6 @@ img.opacity:hover {
     /* position: relative; */
     z-index: 1;
 }
+.radius {
+    border-radius: 200px;
+}
