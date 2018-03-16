@@ -1,5 +1,5 @@
 
-ul.c {
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -10,11 +10,15 @@ ul.c {
     top: 0;
 }
 
-li.b {
+ol {
+    list-style-type: disc;
+}
+
+ul li {
     float: left;
 }
 
-li a.a,
+ul li a,
 .dropbtn {
     display: block;
     color: white;
@@ -24,11 +28,11 @@ li a.a,
 
 }
 
-li a.a:hover .dropdown:hover .dropbtn {
+ul li a:hover .dropdown:hover .dropbtn {
     background-color: #111;
 }
 
-li a.a:hover {
+ul li a:hover {
     background-color: #111;
 }
 
@@ -37,15 +41,17 @@ background-color: #4CAF50;
 } */
 
 @media screen and (max-width: 600px) {
-    ul li.a,
-    ul li.a {
+    ul li,
+    ul li {
         float: none;
-        
+        }
+    .hidden {
+        display: none;
     }
     
 }
 
-li.dropdown {
+ul li.dropdown {
     display: inline-block;
 }
 

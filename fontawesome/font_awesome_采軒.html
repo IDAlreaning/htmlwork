@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.min.css">
+    <style>
+        * {
+            padding-left: 20px;
+        }
+        .icon {
+            color: cadetblue;
+        }
+
+        .iconline {
+            color: green;
+        }
+
+        h2 {
+            border-bottom: 3px solid rgba(255, 0, 0, 0.473);
+            margin: 20px;
+            margin-right: 200px;
+            display: block;
+
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin-left: 50px;
+        }
+
+        .div {
+            border-left: 4px solid green;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1></h1>
+    <h2>在本機端引用AwesomeFont CSS</h2>
+    <p>&lt;link rel="stylesheet" href="./fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.min.css"&gt;
+    </p>
+    <br>
+    <br>
+    <h2>如何透過ＣＳＳ修改icon顏色</h2>
+
+
+    <div class="div">
+    head裡
+        <pre>
+&lt;style&gt;
+    .icon {
+        color: cadetblue;
+}
+&lt;/style&gt;</pre>
+    </div>
+    <div class="div">
+    body裡
+        <pre>
+&lt;div class="icon"&gt;
+    &lt;ul class="fa-ul" style="font-size:20px"&gt;
+        &lt;li&gt;
+                &lt;i class="fa-li fa fa-check-square"&gt;&lt;/i&gt;List icons&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</pre>
+</div>
+
+    <br>
+    <br>
+    <h2>放大icon 1到10倍</h2>
+
+    <span class="icon">
+        <i class="fab fa-facebook-square"></i>1x
+
+        <i class="fab fa-facebook-square fa-2x"></i>2x
+
+        <i class="fab fa-facebook-square fa-3x"></i>3x
+
+        <i class="fab fa-facebook-square fa-4x"></i>4x
+
+        <i class="fab fa-facebook-square fa-5x"></i>5x
+
+        <i class="fab fa-facebook-square fa-6x"></i>6x
+
+        <i class="fab fa-facebook-square fa-7x"></i>7x
+
+        <i class="fab fa-facebook-square fa-8x"></i>8x
+
+        <i class="fab fa-facebook-square fa-9x"></i>9x
+
+        <i class="fab fa-facebook-square fa-10x"></i>10x
+    </span>
+    <br>
+    <br>
+    <h2>套用icon到ul清單，並舉3個li例子</h2>
+    <div class="icon">
+        <ul class="fa-ul" style="font-size:20px">
+            <li>
+                <i class="fa-li fa fa-check-square"></i>List icons</li>
+            <li>
+                <i class="fa-li fa fa-spinner"></i>List icons</li>
+            <li>
+                <i class="fa-li fa fa-square"></i>List icons</li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <h2>Animated Icons有哪兩種樣式，試說明並舉例</h2>
+    <table>
+        <tr>
+            <th>fa-spin</th>
+            <th>fa-pulse</th>
+        </tr>
+        <tr>
+            <td>
+                <p>&lt;i class="fa fa-spinner fa-spin"&gt;&lt;/i&gt;
+                </p>
+                <p>比較順的旋轉</p>
+            </td>
+            <td>
+                <p>&lt;i class="fa fa-spinner fa-pulse"&gt;&lt;/i&gt;
+                </p>
+
+                <p>八個角度旋轉</p>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <h2>Stack Icon，請實作一個以line為icon的(inverse) on fa-circle</h2>
+
+    <span class="fa-stack fa-3x iconline">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fab fa-line fa-stack-1x fa-inverse"></i>
+    </span>
+    fab-line (inverse) on fa-circle    <br>
+</body>
+
+</html>
