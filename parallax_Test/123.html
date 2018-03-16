@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://www.w3school.com.cn/jquery/jquery-1.11.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeIn();
+    $("#div2").fadeIn("slow");
+    $("#div3").fadeIn(3000);
+  });
+});
+</script>
+</head>
+
+<body>
+
+<button>123</button>
+<br><br>
+<div id="div1" style="width:80px;height:80px;display:none;background-color:rgb(110, 255, 81);"></div>
+<br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:rgb(158, 175, 255);"></div>
+<br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:rgb(255, 168, 216);"></div>
+</body>
+</html>
