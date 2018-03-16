@@ -1,6 +1,6 @@
 .parallax1 {
 
-    background-image: url("251511-P494XF-9312.png");
+    background-image: url("../images/Parallax/background_Paris.png");
     background-size: 200px;
 
     min-height: 500px;
@@ -14,7 +14,7 @@
 
 .parallax2 {
 
-    background-image: url("43.jpg");
+    background-image: url("../images/Parallax/computer.jpg");
     background-size: 200px;
 
     min-height: 500px;
